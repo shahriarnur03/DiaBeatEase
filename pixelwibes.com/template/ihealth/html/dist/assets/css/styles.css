@@ -1,0 +1,581 @@
+.button-group {
+    border-radius: 50px;
+    overflow: hidden;
+    display: inline-flex;
+    background-color: #e2f1e6;
+}
+
+.button-group .btn {
+    border-radius: 0;
+    border: none;
+    position: relative;
+    padding: 10px 19px !important;
+    transition: .3s;
+}
+
+.button-group .btn:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.button-group .btn:last-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.button-group .btn.active {
+    background-color: #6AAA9B;
+    /* Change this color to the desired active button color */
+    color: white;
+    z-index: 2;
+
+}
+
+.button-group .btn:not(.active) {
+    background-color: #e2f1e6;
+    /* Change this color to the desired inactive button color */
+    color: black;
+    border: none;
+    z-index: 1;
+    margin-left: -17px;
+    padding-left: 25px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.button-group .btn:not(.active):hover {
+    background-color: #62b9a5;
+}
+
+/* Ratting star */
+.icofont-star {
+    color: #62b9a5;
+}
+
+.hospital-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+/* hello */
+/* custom-styles.css */
+.bg-custom-1 {
+    background-color: #7ec17e;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgb(117, 117, 117);
+}
+
+.bg-custom-2 {
+    background-color: #d96262;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(117, 117, 117);
+}
+
+.bg-custom-3 {
+    background-color: #5eb9d0;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(117, 117, 117);
+}
+
+/* custom-styles.css */
+.progress {
+    height: 5px;
+    /* Adjust the height as needed */
+}
+
+/* Custom progress bar colors */
+.bg-custom-progress-1 {
+    background-color: #3c7337;
+    /* Custom color for the first progress bar */
+}
+
+.bg-custom-progress-2 {
+    background-color: #ba2929;
+    /* Custom color for the second progress bar */
+}
+
+.bg-custom-progress-3 {
+    background-color: #0e89ab;
+    /* Custom color for the third progress bar */
+}
+
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+}
+
+.button,
+.button__icon,
+.button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 30px;
+    stroke: #fff;
+}
+
+.button:hover {
+    background: #34974d;
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.button:active .button__icon {
+    background-color: #2e8644;
+}
+
+.button:active {
+    border: 1px solid #2e8644;
+}
+
+/* asif */
+/* flip card */
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 230px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 10px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(116, 230, 188);
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, rgb(93, 213, 153) 48%);
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+       bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* All medications */
+
+  .medication-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.medication-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.medication-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.medication-text {
+    flex-grow: 1;
+}
+.medication-schedule {
+    font-weight: bold;
+    color: #555;
+}
+.report-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Medication Card Scroller */
+.card-body.overflow-auto {
+  max-height: calc(100vh - 200px); /* Adjust the 200px to fit your header/footer */
+  overflow-y: auto;
+}
+
+.card-body.overflow-auto {
+  max-height: 600px; /* Adjust this value based on the total height of your six items */
+  overflow-y: auto;
+}
+
+.card-footer.bg-transparent {
+  border-top: none;
+}
+
+/* Reports */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.card-report {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 10px 0;
+}
+.card-header-report {
+  background: #f8f8f8;
+  border-bottom: 1px solid #eee;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.card-body-report {
+  padding: 20px;
+  height: 300px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enables vertical scrollbar if content overflows */
+}
+.document-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+.document-item i {
+  margin-right: 10px;
+}
+.document-item:hover {
+  background-color: #f9f9f9;
+}
+
+.Btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+}
+
+.svgIcon {
+  fill: #2196f3;
+}
+
+.icon2 {
+  width: 18px;
+  height: 5px;
+  border-bottom: 2px solid #2196f3;
+  border-left: 2px solid #2196f3;
+  border-right: 2px solid #2196f3;
+}
+
+.tooltip {
+  position: absolute;
+  right: -80px;
+  opacity: 0;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(12, 12, 12);
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  left: -5%;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .tooltip {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover {
+  background-color: #2196f3;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .icon2 {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.Btn:hover .svgIcon {
+  fill: black;
+  animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.bin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgb(255, 95, 95);
+  cursor: pointer;
+  border: 2px solid rgb(255, 201, 201);
+  transition-duration: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.bin-bottom {
+  width: 15px;
+  z-index: 2;
+}
+.bin-top {
+  width: 17px;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+.bin-button:hover .bin-top {
+  transform: rotate(45deg);
+}
+.bin-button:hover {
+  background-color: rgb(255, 0, 0);
+}
+.bin-button:active {
+  transform: scale(0.9);
+}
+.garbage {
+  position: absolute;
+  width: 14px;
+  height: auto;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.bin-button:hover .garbage {
+  animation: throw 0.4s linear;
+}
+@keyframes throw {
+  from {
+    transform: translate(-400%, -700%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+
+.edit-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none !important;
+}
+
+.edit-svgIcon {
+  width: 17px;
+  transition-duration: 0.3s;
+}
+
+.edit-svgIcon path {
+  fill: white;
+}
+
+.edit-button:hover {
+  width: 90px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #62b9a5;
+  align-items: center;
+}
+
+.edit-button:hover .edit-svgIcon {
+  width: 20px;
+  transition-duration: 0.3s;
+  transform: translateY(60%);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.edit-button::before {
+  display: none;
+  content: "Edit";
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 2px;
+}
+
+.edit-button:hover::before {
+  display: block;
+  padding-right: 10px;
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-duration: 0.3s;
+}
+
+.delete-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.delete-svgIcon {
+  width: 15px;
+  transition-duration: 0.3s;
+}
+
+.delete-svgIcon path {
+  fill: white;
+}
+
+.delete-button:hover {
+  width: 90px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #f54f4f;
+  align-items: center;
+}
+
+.delete-button:hover .delete-svgIcon {
+  width: 20px;
+  transition-duration: 0.3s;
+  transform: translateY(60%);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.delete-button::before {
+  display: none;
+  content: "Delete";
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 2px;
+}
+
+.delete-button:hover::before {
+  display: block;
+  padding-right: 10px;
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-duration: 0.3s;
+}
