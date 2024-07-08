@@ -1,0 +1,996 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/patient-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2024 19:16:47 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>:: I-Health:: Patient Profile </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+    <!-- Plugin css file  -->
+    <link rel="stylesheet" href="../../../assets/plugin/owlcarousel/owl.carousel.min.css">
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../../../assets/css/ihealth.style.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <!-- Google Code  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-264428387-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-264428387-1');
+    </script>
+</head>
+
+<body>
+
+    <div id="ihealth-layout" class="theme-tradewind">
+
+        <!-- sidebar -->
+        <div class="sidebar px-4 py-4 py-md-5 me-0">
+            <div class="d-flex flex-column h-100">
+                <a href="index.html" class="mb-0 brand-icon">
+                    <span class="logo-icon">
+                        <i class="icofont-heart-beat fs-2"></i>
+                    </span>
+                    <span class="logo-text">I-Health</span></a>
+                <!-- Menu: main ul -->
+
+                <ul class="menu-list flex-grow-1 mt-3">
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#dashboard" href="#">
+                            <i class="icofont-ui-home fs-5"></i> <span>Home</span> <span
+                                class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="dashboard">
+                            <li><a class="ms-link" href="Dashborar.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="virtual.html"><i class="icofont-ui-video-chat fs-5"></i> <span>I-Health
+                                Virtual</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Doctor" href="#">
+                            <i class="icofont-doctor-alt fs-5"></i> <span>Doctor</span> <span
+                                class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse show" id="menu-Doctor">
+                            <li><a class="ms-link" href="lab_report_upload.html">Upload Lab Reports</a></li>
+                            <li><a class="ms-link" href="D_scheadle.html">Customise Scheadule</a></li>
+                            <li><a class="ms-link" href="D_appoinment.html">Appoinment</a></li>
+                            <li><a class="ms-link" href="lab_reports_view.html">View Lab Report</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Menu: menu collepce btn -->
+                <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                    <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- main body area -->
+        <div class="main px-lg-4 px-md-4">
+
+            <!-- Body: Header -->
+            <div class="header">
+                <nav class="navbar py-4">
+                    <div class="container-xxl">
+
+                        <!-- header rightbar icon -->
+                        <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+                            <div class="d-flex">
+                                <a class="nav-link text-primary collapsed" href="help.html" title="Get Help">
+                                    <i class="icofont-info-square fs-5"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown notifications zindex-popover">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <i class="icofont-alarm fs-5"></i>
+                                    <span class="pulse-ring"></span>
+                                </a>
+                                <div id="NotificationsDiv"
+                                    class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-sm-end p-0 m-0">
+                                    <div class="card border-0 w380">
+                                        <div class="card-header border-0 p-3">
+                                            <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                                <span>Notifications</span>
+                                                <span class="badge text-white">06</span>
+                                            </h5>
+                                        </div>
+                                        <div class="tab-content card-body">
+                                            <div class="tab-pane fade show active">
+                                                <ul class="list-unstyled list mb-0">
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle"
+                                                                src="../../../assets/images/xs/avatar1.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span
+                                                                        class="font-weight-bold">Chloe Walkerr</span>
+                                                                    <small>2MIN</small></p>
+                                                                <span class="">Added Appointment 2021-06-19 <span
+                                                                        class="badge bg-success">Book</span></span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <div class="avatar rounded-circle no-thumbnail">AH</div>
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span
+                                                                        class="font-weight-bold">Alan Hill</span>
+                                                                    <small>13MIN</small></p>
+                                                                <span class="">Lab sample collection</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle"
+                                                                src="../../../assets/images/xs/avatar3.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span
+                                                                        class="font-weight-bold">Melanie Oliver</span>
+                                                                    <small>1HR</small></p>
+                                                                <span class="">Invoice Create Patient Room A-803</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle"
+                                                                src="../../../assets/images/xs/avatar5.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span
+                                                                        class="font-weight-bold">Boris Hart</span>
+                                                                    <small>13MIN</small></p>
+                                                                <span class="">Medicine Order to Medical</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle"
+                                                                src="../../../assets/images/xs/avatar6.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span
+                                                                        class="font-weight-bold">Alan Lambert</span>
+                                                                    <small>1HR</small></p>
+                                                                <span class="">Leave Apply</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle"
+                                                                src="../../../assets/images/xs/avatar7.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span
+                                                                        class="font-weight-bold">Zoe Wright</span>
+                                                                    <small class="">1DAY</small></p>
+                                                                <span class="">Patient Food Order Room A-809</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="card-footer text-center border-top-0" href="#"> View all
+                                            notifications</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                                <div class="u-info me-2">
+                                    <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">John
+                                            Quinn</span></p>
+                                    <small>Admin Profile</small>
+                                </div>
+                                <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button"
+                                    data-bs-toggle="dropdown" data-bs-display="static">
+                                    <img class="avatar lg rounded-circle img-thumbnail"
+                                        src="../../../assets/images/profile_av.png" alt="profile">
+                                </a>
+                                <div
+                                    class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                                    <div class="card border-0 w280">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex py-1">
+                                                <img class="avatar rounded-circle" src="../../../assets/images/profile_av.png"
+                                                    alt="profile">
+                                                <div class="flex-fill ms-3">
+                                                    <p class="mb-0"><span class="font-weight-bold">John Quinn</span></p>
+                                                    <small class="">Johnquinn@gmail.com</small>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <hr class="dropdown-divider border-dark">
+                                            </div>
+                                        </div>
+                                        <div class="list-group m-2 ">
+                                            <a href="virtual.html"
+                                                class="list-group-item list-group-item-action border-0 "><i
+                                                    class="icofont-ui-video-chat fs-5 me-3"></i>I-Health Virtual</a>
+                                            <a href="patient-invoices.html"
+                                                class="list-group-item list-group-item-action border-0 "><i
+                                                    class="icofont-dollar fs-5 me-3"></i>Patient Invoices</a>
+                                            <a href="ui-elements/auth-signin.html"
+                                                class="list-group-item list-group-item-action border-0 "><i
+                                                    class="icofont-logout fs-6 me-3"></i>Signout</a>
+                                            <div>
+                                                <hr class="dropdown-divider border-dark">
+                                            </div>
+                                            <a href="ui-elements/auth-signup.html"
+                                                class="list-group-item list-group-item-action border-0 "><i
+                                                    class="icofont-contact-add fs-5 me-3"></i>Add personal account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting ms-2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i
+                                        class="icofont-gear-alt fs-5"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- menu toggler -->
+                        <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                            <span class="fa fa-bars"></span>
+                        </button>
+
+                        <!-- main menu Search-->
+                        <div class="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
+                            <div class="input-group flex-nowrap input-group-lg">
+                                <input type="search" class="form-control" placeholder="Search" aria-label="search"
+                                    aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i
+                                        class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Body: Body -->
+            <div class="body d-flex py-3">
+                <div class="container-xxl">
+                    <div class="row align-items-center">
+                        <div class="border-0 mb-4">
+                            <div class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap">
+                                <h3 class="fw-bold mb-0">Hospital Overview</h3>
+                            </div>
+                        </div>
+                    </div> <!-- Row end  -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="card hospital-card mb-3 flex-column">
+                                <div class="card-body d-flex hospital-fulldeatil flex-column">
+                                    <div class="profile-hospital  w220 mx-auto">
+                                        <a href="#">
+                                            <img src="../../../assets/images/Evercare-Hospital.jpeg" alt="Hospital Image"
+                                                 class="hospital-img img-thumbnail shadow-sm">
+                                        </a>
+                                        <div class="about-info d-flex align-items-center mt-3 justify-content-center flex-column">
+                                            <span class="text-muted small">Hospital ID : HOS-0001</span>
+                                        </div>
+                                    </div>
+                                    <div class="hospital-info w-100">
+                                        <h6 class="mb-0 mt-2 fw-bold d-block fs-6 text-center">Evercare Hospital</h6>
+                                        <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted text-center mx-auto d-block">Located
+                                            in Bashundhara R/A</span>
+                                        <p class="mt-2">Duis felis ligula, pharetra at nisl sit amet, ullamcorper fringilla mi. Cras luctus metus non enim porttitor sagittis. Sed tristique scelerisque arcu id dignissim. Aenean sed erat ut est commodo tristique ac a metus. Praesent efficitur congue orci. Fusce in mi condimentum mauris maximus sodales. Quisque dictum est augue, vitae cursus quam finibus in. Nulla at tempus enim. Fusce sed mi et nibh laoreet consectetur nec vitae lacus.</p>
+                                        <div class="row g-2 pt-2">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-ui-touch-phone"></i>
+                                                    <span class="ms-2">202-555-0174 </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-email"></i>
+                                                    <span class="ms-2">info@evercarehospital.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-address-book"></i>
+                                                    <span class="ms-2">Plot 81, Block-E, Bashundhara Rd, Dhaka 1229</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="input-group flex-nowrap input-group-lg mb-3">
+                                <input type="search" class="form-control" placeholder="Enter Diagnostic Test Name" aria-label="search"
+                                       aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i
+                                        class="fa fa-search"></i></button>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Diagnosis Type</h5>
+                                    <div id="diagnosisType"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="card mb-3">
+                                <div
+                                    class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold ">Departments </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div
+                                        class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4">
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 bg-primary">
+                                                    <i class="icofont-surgeon fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">Visit Surgeon</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar1.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Alexander</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 light-danger-bg">
+                                                    <i class="icofont-brain-alt fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">MRI Brain</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar12.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Peter</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 bg-secondary">
+                                                    <i class="icofont-ui-cut fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">ECG</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar2.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Mary</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 bg-warning">
+                                                    <i class="icofont-xray fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">XRAY</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar3.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Zoe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 bg-danger">
+                                                    <i class="icofont-laboratory fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">Basic Metabolic</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar4.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Lily</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 bg-lavender-purple">
+                                                    <i class="icofont-injection-syringe fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">Injection Syringe</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar5.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Grace</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 bg-lightblue">
+                                                    <i class="icofont-heartbeat fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">Heartbeat Check</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar6.jpg"
+                                                         class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Jasmine</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="patientinfo-file shadow-sm p-3">
+                                                <div class="patient-did p-2 light-orange-bg">
+                                                    <i class="icofont-tooth fs-4 text-white"></i>
+                                                </div>
+                                                <span class="text-end float-end small">14.05</span>
+                                                <h6 class="fw-bold mt-4 pt-4 mb-4">Artificial Teeth Set</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="../../../assets/images/xs/avatar11.jpg"
+                                                        class="avatar   rounded-circle me-2" alt="profile-image">
+                                                    <span class="ms-1 small">DR.Sarah</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div
+                                    class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold "></h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3">                                        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card text-white bg-custom-1">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="card-icon mr-3">
+                                                            <i class="fa fa-users fa-2x"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="card-title">Todays Appointments</h5>
+                                                            <p class="card-text">450</p>
+                                                            <div class="progress mt-2">
+                                                                <div class="progress-bar bg-custom-progress-1" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <span>45% Increase in 28 days</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card text-white bg-custom-2">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="card-icon mr-3">
+                                                            <i class="fa fa-user-plus fa-2x"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="card-title">Todays New Patients</h5>
+                                                            <p class="card-text">155</p>
+                                                            <div class="progress mt-2">
+                                                                <div class="progress-bar bg-custom-progress-2" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <span>40% Increase in 28 days</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card text-white bg-custom-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="card-icon mr-3">
+                                                            <i class="fa fa-cut fa-2x"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="card-title">Todays Operations</h5>
+                                                            <p class="card-text">52</p>
+                                                            <div class="progress mt-2">
+                                                                <div class="progress-bar bg-custom-progress-3" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                            <span>85% Increase in 28 days</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card review-card">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold">Recent Review</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row clearfix g-3">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="feedback-info sticky-top">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h2 class="display-6 fw-bold mb-0">4.5</h2>
+                                                        <small class="text-muted">based on 1,032 ratings</small>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="mb-2 me-3">
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">5<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">661</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar light-success-bg" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">4<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">237</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar bg-info-light" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">3<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">76</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar bg-lightyellow" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">2<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">19</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar light-danger-bg" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">1<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">39</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar bg-careys-pink" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 review-list">
+                                            <ul class="list-unstyled mb-4">
+                                                <li class="card mb-2">
+                                                    <div class="card-body p-lg-4 p-3">
+                                                        <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar3.jpg" alt="">
+                                                            <div class="flex-fill ms-3 text-truncate">
+                                                                <h6 class="mb-0"><span>Diane Fisher</span> <span class="text-muted small">450 Followers</span></h6>
+                                                                <span class="text-muted">3 hours ago</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="mb-2 me-3">
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-item-post">
+                                                            <h6 class="">Great experience as a first timer</h6>
+                                                            <p> barely waited to be helped when I checked in. The staff and Dr. (Name) were all very friendly and helpful. I especially loved how Dr. Joan Wilson really took his time to explain my conditions with me as well as my treatment options. </p>
+                                                        </div>
+                                                    </div>
+                                                </li> <!-- .Card End -->
+                                                <li class="card mb-2">
+                                                    <div class="card-body p-lg-4 p-3">
+                                                        <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar8.jpg" alt="">
+                                                            <div class="flex-fill ms-3 text-truncate">
+                                                                <h6 class="mb-0"><span>Andrea Gill</span> <span class="text-muted small">724 Followers</span></h6>
+                                                                <span class="text-muted">1 Day ago</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="mb-2 me-3">
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-item-post">
+                                                            <h6 class="">His excellent treatment,</h6>
+                                                            <p>investigative mind and ability to connect, you know where you stand immediately and what next steps look like.</p>
+                                                        </div>
+                                                    </div>
+                                                </li> <!-- .Card End -->
+                                                <li class="card mb-2">
+                                                    <div class="card-body p-lg-4 p-3">
+                                                        <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar7.jpg" alt="">
+                                                            <div class="flex-fill ms-3 text-truncate">
+                                                                <h6 class="mb-0"><span>Avery Bond</span> <span class="text-muted small">439 Followers</span></h6>
+                                                                <span class="text-muted">5 Day ago</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="mb-2 me-3">
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-item-post">
+                                                            <h6 class=""> This practice is terrific</h6>
+                                                            <p>Dr.Joan Wilson combines expertise and a willingness to listen and discuss. She’s also an excellent surgeon. Also,</p>
+                                                            <div>
+                                                                <div class="d-flex mt-3 pt-3 border-top">
+                                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar2.jpg" alt="">
+                                                                    <div class="flex-fill ms-3 text-truncate">
+                                                                        <p class="mb-0"><span>Karen Clark</span> <small class="msg-time">5 Day ago</small></p>
+                                                                        <span class="text-muted">staff is very friendly and professional. I’ve never had to wait more than a few minutes when I arrive on time for an appointment.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-4">
+                                                                <textarea class="form-control" placeholder="Reply"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li> <!-- .Card End -->
+                                            </ul>
+                                            <nav aria-label="...">
+                                                <ul class="pagination justify-content-end">
+                                                    <li class="page-item disabled">
+                                                        <span class="page-link">Previous</span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">2</span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div><!-- Row End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Row End -->
+            
+                    <div class="row g-3 mb-3">
+                        <div class="col-xl-6">
+                            <div class="card review-card">
+                                <div class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0">
+                                    <h6 class="mb-0 fw-bold">Recent Review</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row clearfix g-3">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="feedback-info sticky-top">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h2 class="display-6 fw-bold mb-0">4.5</h2>
+                                                        <small class="text-muted">based on 1,032 ratings</small>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="mb-2 me-3">
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">5<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">661</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar light-success-bg" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">4<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">237</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar bg-info-light" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">3<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">76</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar bg-lightyellow" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">2<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">19</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar light-danger-bg" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-count mt-2">
+                                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                                <h6 class="mb-0 fw-bold d-flex align-items-center">1<i class="bi bi-star-fill text-warning ms-1 small-11 pb-1"></i></h6>
+                                                                <span class="small text-muted">39</span>
+                                                            </div>
+                                                            <div class="progress" style="height: 10px;">
+                                                                <div class="progress-bar bg-careys-pink" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-12 review-list">
+                                            <ul class="list-unstyled mb-4">
+                                                <li class="card mb-2">
+                                                    <div class="card-body p-lg-4 p-3">
+                                                        <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar3.jpg" alt="">
+                                                            <div class="flex-fill ms-3 text-truncate">
+                                                                <h6 class="mb-0"><span>Diane Fisher</span> <span class="text-muted small">450 Followers</span></h6>
+                                                                <span class="text-muted">3 hours ago</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="mb-2 me-3">
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-item-post">
+                                                            <h6 class="">Great experience as a first timer</h6>
+                                                            <p> barely waited to be helped when I checked in. The staff and Dr. (Name) were all very friendly and helpful. I especially loved how Dr. Joan Wilson really took his time to explain my conditions with me as well as my treatment options. </p>
+                                                        </div>
+                                                    </div>
+                                                </li> <!-- .Card End -->
+                                                <li class="card mb-2">
+                                                    <div class="card-body p-lg-4 p-3">
+                                                        <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar8.jpg" alt="">
+                                                            <div class="flex-fill ms-3 text-truncate">
+                                                                <h6 class="mb-0"><span>Andrea Gill</span> <span class="text-muted small">724 Followers</span></h6>
+                                                                <span class="text-muted">1 Day ago</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="mb-2 me-3">
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-item-post">
+                                                            <h6 class="">His excellent treatment,</h6>
+                                                            <p>investigative mind and ability to connect, you know where you stand immediately and what next steps look like.</p>
+                                                        </div>
+                                                    </div>
+                                                </li> <!-- .Card End -->
+                                                <li class="card mb-2">
+                                                    <div class="card-body p-lg-4 p-3">
+                                                        <div class="d-flex mb-3 pb-3 border-bottom flex-wrap">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar7.jpg" alt="">
+                                                            <div class="flex-fill ms-3 text-truncate">
+                                                                <h6 class="mb-0"><span>Avery Bond</span> <span class="text-muted small">439 Followers</span></h6>
+                                                                <span class="text-muted">5 Day ago</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="mb-2 me-3">
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-fill text-warning"></i></a>
+                                                                    <a href="#" class="rating-link active"><i class="bi bi-star-half text-warning"></i></a>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-item-post">
+                                                            <h6 class=""> This practice is terrific</h6>
+                                                            <p>Dr.Joan Wilson combines expertise and a willingness to listen and discuss. She’s also an excellent surgeon. Also,</p>
+                                                            <div>
+                                                                <div class="d-flex mt-3 pt-3 border-top">
+                                                                    <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar2.jpg" alt="">
+                                                                    <div class="flex-fill ms-3 text-truncate">
+                                                                        <p class="mb-0"><span>Karen Clark</span> <small class="msg-time">5 Day ago</small></p>
+                                                                        <span class="text-muted">staff is very friendly and professional. I’ve never had to wait more than a few minutes when I arrive on time for an appointment.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-4">
+                                                                <textarea class="form-control" placeholder="Reply"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li> <!-- .Card End -->
+                                            </ul>
+                                            <nav aria-label="...">
+                                                <ul class="pagination justify-content-end">
+                                                    <li class="page-item disabled">
+                                                        <span class="page-link">Previous</span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">2</span>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div><!-- Row End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CSS Styles -->
+            <style>
+                .review-card {
+                    max-height: 700px; /* Adjust this value as needed */
+                    overflow-y: auto;
+                }
+                .review-list {
+                    max-height: 500px; /* Adjust this value as needed */
+                    overflow-y: auto;
+                }
+            </style>
+            
+            
+        </div>
+
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../../../assets/bundles/libscripts.bundle.js"></script>
+
+    <!-- Plugin Js -->
+    <script src="../../../assets/bundles/apexcharts.bundle.js"></script>
+    <script src="../../../assets/plugin/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Jquery Page Js -->
+    <script src="../../../../js/template.js"></script>
+    <script src="../../../../js/page/patient-profile.js"></script>
+
+    <script>
+        var options = {
+            series: [{
+                data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+            }],
+            chart: {
+                type: 'bar',
+                height: 380
+            },
+            plotOptions: {
+                bar: {
+                    barHeight: '100%',
+                    distributed: true,
+                    horizontal: true,
+                    dataLabels: {
+                        position: 'bottom'
+                    },
+                }
+            },
+            colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
+                '#f48024', '#69d2e7'
+            ],
+            dataLabels: {
+                enabled: true,
+                textAnchor: 'start',
+                style: {
+                    colors: ['#fff'],
+                    fontWeight: 'normal'
+                },
+                formatter: function (val, opt) {
+                    return 'Type ' + (opt.dataPointIndex + 1) + ":  " + val
+                },
+                offsetX: 0,
+                dropShadow: {
+                    enabled: true
+                }
+            },
+            stroke: {
+                width: 1,
+                colors: ['#fff']
+            },
+            xaxis: {
+                categories: ['Type 1', 'Type 2', 'Type 3', 'Type 4', 'Type 5', 'Type 6', 'Type 7', 'Type 8', 'Type 9', 'Type 10'],
+            },
+            yaxis: {
+                labels: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Custom DataLabels',
+                align: 'center',
+                floating: true
+            },
+            subtitle: {
+                text: 'Category Names as DataLabels inside bars',
+                align: 'center',
+            },
+            tooltip: {
+                theme: 'dark',
+                x: {
+                    show: false
+                },
+                y: {
+                    title: {
+                        formatter: function () {
+                            return ''
+                        }
+                    }
+                }
+            }
+        };
+    
+        var chart = new ApexCharts(document.querySelector("#diagnosisType"), options);
+        chart.render();
+    </script>
+    
+    
+    
+
+</body>
+
+<!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/patient-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2024 19:16:48 GMT -->
+
+</html>

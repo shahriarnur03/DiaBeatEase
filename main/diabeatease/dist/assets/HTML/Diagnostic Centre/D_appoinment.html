@@ -60,8 +60,7 @@
                     <span class="logo-icon">
                         <i class="icofont-heart-beat fs-2"></i>
                     </span>
-                    <span class="logo-text">I-Health</span>
-                </a>
+                    <span class="logo-text">I-Health</span></a>
                 <!-- Menu: main ul -->
 
                 <ul class="menu-list flex-grow-1 mt-3">
@@ -71,7 +70,7 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse" id="dashboard">
-                            <li><a class="ms-link" href="index.html">Dashboard</a></li>
+                            <li><a class="ms-link" href="Dashborar.html">Dashboard</a></li>
                         </ul>
                     </li>
                     <li><a class="m-link" href="virtual.html"><i class="icofont-ui-video-chat fs-5"></i> <span>I-Health
@@ -82,23 +81,11 @@
                                 class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
                         <!-- Menu: Sub menu ul -->
                         <ul class="sub-menu collapse show" id="menu-Doctor">
-                            <li><a class="ms-link" href="doctor-profile.html">My Profile</a></li>
-                            <li><a class="ms-link" href="appointment.html">My Appointments</a></li>
-                            <li><a class="ms-link" href="doctor-schedule.html">My Schedule</a></li>
-                            <li><a class="ms-link" href="doctor-all.html">All Doctors</a></li>
+                            <li><a class="ms-link" href="lab_report_upload.html">Upload Lab Reports</a></li>
+                            <li><a class="ms-link" href="D_scheadle.html">Customise Scheadule</a></li>
+                            <li><a class="ms-link" href="D_appoinment.html">Appoinment</a></li>
+                            <li><a class="ms-link" href="lab_reports_view.html">View Lab Report</a></li>
                         </ul>
-                    </li>
-                    <li class="collapsed">
-                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu-Patient" href="#">
-                            <i class="icofont-blind fs-5"></i> <span>Patient</span> <span
-                                class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
-                        <!-- Menu: Sub menu ul -->
-                        <ul class="sub-menu collapse" id="menu-Patient">
-                            <li><a class="ms-link" href="patient-list.html">Patient List</a></li>
-                            <li><a class="ms-link" href="patient-add.html">Add Patient</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="m-link" href="labs.html"><i class="icofont-blood-test fs-5"></i> <span>Labs</span></a>
                     </li>
                 </ul>
                 <!-- Menu: menu collepce btn -->
@@ -438,25 +425,42 @@
                         </div>
                     </div>
                 </div>
-            <div style="border: 1px solid #ddd; padding: 20px; border-radius: 5px;">
-                <h5 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Payment
-                    Details</h5>
-                <div class="row">
-                    <div class="col-mt-3">
-                        <label for="total">Total Rs.</label>
-                        <input type="number" class="form-control" id="total" >
-                    <div class="col-mt-3">
-                        <label for="mode">Mode</label>
-                        <select id="mode" class="form-control">
-                            <option>Cash</option>
-                            <option>Bank</option>
-                            <option>Mobile Banking</option>
-                        </select>
+                <div style="border: 2px solid #ddd; padding: 20px; border-radius: 5px;">
+                    <h5 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Take Appointment</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="appointment-date">Appointment Date</label>
+                            <input type="date" class="form-control" id="appointment-date">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="appointment-time">Appointment Time</label>
+                            <select class="form-control" id="appointment-time">
+                                <option value="">--Select Time--</option>
+                                <!-- Time slots will be dynamically added here -->
+                            </select>
+                        </div>
                     </div>
+                    
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Create Case</button>
+                <div style="border: 1px solid #ddd; padding: 20px; border-radius: 5px;">
+                    <h5 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px;">Payment
+                        Details</h5>
+                    <div class="row">
+                        <div class="col-mt-3">
+                            <label for="total">Total Rs.</label>
+                            <input type="number" class="form-control" id="total" >
+                        <div class="col-mt-3">
+                            <label for="mode">Mode</label>
+                            <select id="mode" class="form-control">
+                                <option>Cash</option>
+                                <option>Bank</option>
+                                <option>Mobile Banking</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" id="book-appointment">Book Appointment</button>
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <!-- Jquery Core Js -->
@@ -468,196 +472,240 @@
     <script src="../../../../js/template.js"></script>
     <script src="../../../../js/page/patient-profile.js"></script>
     <script>
-       var options = {
-    series: [{
-        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
-    }],
-    chart: {
-        type: 'bar',
-        height: 380
-    },
-    plotOptions: {
-        bar: {
-            barHeight: '100%',
-            distributed: true,
-            horizontal: true,
-            dataLabels: {
-                position: 'bottom'
+        var options = {
+            series: [{
+                data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+            }],
+            chart: {
+                type: 'bar',
+                height: 380
             },
-        }
-    },
-    colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
-        '#f48024', '#69d2e7'
-    ],
-    dataLabels: {
-        enabled: true,
-        textAnchor: 'start',
-        style: {
-            colors: ['#fff'],
-            fontWeight: 'normal'
-        },
-        formatter: function (val, opt) {
-            return 'Type ' + (opt.dataPointIndex + 1) + ":  " + val
-        },
-        offsetX: 0,
-        dropShadow: {
-            enabled: true
-        }
-    },
-    stroke: {
-        width: 1,
-        colors: ['#fff']
-    },
-    xaxis: {
-        categories: ['Type 1', 'Type 2', 'Type 3', 'Type 4', 'Type 5', 'Type 6', 'Type 7', 'Type 8', 'Type 9',
-            'Type 10'
-        ],
-    },
-    yaxis: {
-        labels: {
-            show: false
-        }
-    },
-    title: {
-        text: 'Custom DataLabels',
-        align: 'center',
-        floating: true
-    },
-    subtitle: {
-        text: 'Category Names as DataLabels inside bars',
-        align: 'center',
-    },
-    tooltip: {
-        theme: 'dark',
-        x: {
-            show: false
-        },
-        y: {
+            plotOptions: {
+                bar: {
+                    barHeight: '100%',
+                    distributed: true,
+                    horizontal: true,
+                    dataLabels: {
+                        position: 'bottom'
+                    },
+                }
+            },
+            colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
+                '#f48024', '#69d2e7'
+            ],
+            dataLabels: {
+                enabled: true,
+                textAnchor: 'start',
+                style: {
+                    colors: ['#fff'],
+                    fontWeight: 'normal'
+                },
+                formatter: function (val, opt) {
+                    return 'Type ' + (opt.dataPointIndex + 1) + ":  " + val
+                },
+                offsetX: 0,
+                dropShadow: {
+                    enabled: true
+                }
+            },
+            stroke: {
+                width: 1,
+                colors: ['#fff']
+            },
+            xaxis: {
+                categories: ['Type 1', 'Type 2', 'Type 3', 'Type 4', 'Type 5', 'Type 6', 'Type 7', 'Type 8', 'Type 9',
+                    'Type 10'
+                ],
+            },
+            yaxis: {
+                labels: {
+                    show: false
+                }
+            },
             title: {
-                formatter: function () {
-                    return ''
+                text: 'Custom DataLabels',
+                align: 'center',
+                floating: true
+            },
+            subtitle: {
+                text: 'Category Names as DataLabels inside bars',
+                align: 'center',
+            },
+            tooltip: {
+                theme: 'dark',
+                x: {
+                    show: false
+                },
+                y: {
+                    title: {
+                        formatter: function () {
+                            return ''
+                        }
+                    }
                 }
             }
-        }
-    }
-};
-
-var chart = new ApexCharts(document.querySelector("#diagnosisType"), options);
-chart.render();
-
-// Toggle functionality for Report Requested
-document.querySelectorAll('input[name="report-requested"]').forEach((elem) => {
-    elem.addEventListener("change", function (event) {
-        var item = event.target.value;
-        console.log(item + " report requested.");
-    });
-});
-
-// Show/Hide Lab Tests Dropdown based on Lab checkbox
-document.getElementById('lab').addEventListener('change', function () {
-    var labDropdown = document.getElementById('lab-dropdown');
-    if (this.checked) {
-        labDropdown.style.display = 'block';
-    } else {
-        labDropdown.style.display = 'none';
-    }
-});
-
-// Update Selected Tests
-var selectedTestsContainer = document.getElementById('selected-tests-list');
-var labTestsDropdown = document.getElementById('lab-tests');
-var totalAmountInput = document.getElementById('total');
-
-var testPrices = {
-    'Complete Blood Count (C.B.C.) (Rs. 400)': 400,
-    'Liver Function Test (LFT) (Rs. 500)': 500,
-    'Kidney Function Test (KFT) (Rs. 600)': 600,
-    'Lipid Profile (Rs. 700)': 700,
-    'Thyroid Profile (Rs. 800)': 800,
-    'USG': 300,
-    'DIGITAL X-RAY': 300,
-    'X-RAY': 300,
-    'OUTSOURCE LAB': 300,
-    'ECG': 300,
-    'CT SCAN': 300
-};
-
-var checkboxes = document.querySelectorAll('.form-check-input[type="checkbox"]');
-checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-        updateSelectedTests();
-        updateTotalAmount();
-    });
-});
-
-labTestsDropdown.addEventListener('change', function () {
-    updateSelectedTests();
-    updateTotalAmount();
-});
-
-function updateSelectedTests() {
-    selectedTestsContainer.innerHTML = '';
-    var selectedTests = [];
-
-    checkboxes.forEach(function (checkbox) {
-        if (checkbox.checked) {
-            selectedTests.push(checkbox.value);
-        }
-    });
-
-    Array.from(labTestsDropdown.selectedOptions).forEach(function (option) {
-        selectedTests.push(option.value);
-    });
-
-    selectedTests.forEach(function (test, index) {
-        var testItem = document.createElement('div');
-        testItem.classList.add('test-box');
-        testItem.textContent = (index + 1) + '. ' + test;
-        var removeButton = document.createElement('button');
-        removeButton.textContent = 'x';
-        removeButton.style.marginLeft = '10px';
-        removeButton.onclick = function () {
-            removeTest(test);
         };
-        testItem.appendChild(removeButton);
-        selectedTestsContainer.appendChild(testItem);
-    });
-}
 
-function removeTest(test) {
-    checkboxes.forEach(function (checkbox) {
-        if (checkbox.value === test) {
-            checkbox.checked = false;
+        var chart = new ApexCharts(document.querySelector("#diagnosisType"), options);
+        chart.render();
+
+        // Toggle functionality for Report Requested
+        document.querySelectorAll('input[name="report-requested"]').forEach((elem) => {
+            elem.addEventListener("change", function (event) {
+                var item = event.target.value;
+                console.log(item + " report requested.");
+            });
+        });
+
+        // Show/Hide Lab Tests Dropdown based on Lab checkbox
+        document.getElementById('lab').addEventListener('change', function () {
+            var labDropdown = document.getElementById('lab-dropdown');
+            if (this.checked) {
+                labDropdown.style.display = 'block';
+            } else {
+                labDropdown.style.display = 'none';
+            }
+        });
+
+        // Update Selected Tests
+        var selectedTestsContainer = document.getElementById('selected-tests-list');
+        var labTestsDropdown = document.getElementById('lab-tests');
+        var totalAmountInput = document.getElementById('total');
+
+        var testPrices = {
+            'Complete Blood Count (C.B.C.) (Rs. 400)': 400,
+            'Liver Function Test (LFT) (Rs. 500)': 500,
+            'Kidney Function Test (KFT) (Rs. 600)': 600,
+            'Lipid Profile (Rs. 700)': 700,
+            'Thyroid Profile (Rs. 800)': 800,
+            'USG': 300,
+            'DIGITAL X-RAY': 300,
+            'X-RAY': 300,
+            'OUTSOURCE LAB': 300,
+            'ECG': 300,
+            'CT SCAN': 300
+        };
+
+        var checkboxes = document.querySelectorAll('.form-check-input[type="checkbox"]');
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                updateSelectedTests();
+                updateTotalAmount();
+            });
+        });
+
+        labTestsDropdown.addEventListener('change', function () {
+            updateSelectedTests();
+            updateTotalAmount();
+        });
+
+        function updateSelectedTests() {
+            selectedTestsContainer.innerHTML = '';
+            var selectedTests = [];
+
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    selectedTests.push(checkbox.value);
+                }
+            });
+
+            Array.from(labTestsDropdown.selectedOptions).forEach(function (option) {
+                selectedTests.push(option.value);
+            });
+
+            selectedTests.forEach(function (test, index) {
+                var testItem = document.createElement('div');
+                testItem.classList.add('test-box');
+                testItem.textContent = (index + 1) + '. ' + test;
+                var removeButton = document.createElement('button');
+                removeButton.textContent = 'x';
+                removeButton.style.marginLeft = '10px';
+                removeButton.onclick = function () {
+                    removeTest(test);
+                };
+                testItem.appendChild(removeButton);
+                selectedTestsContainer.appendChild(testItem);
+            });
         }
-    });
 
-    Array.from(labTestsDropdown.options).forEach(function (option) {
-        if (option.value === test) {
-            option.selected = false;
+        function removeTest(test) {
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.value === test) {
+                    checkbox.checked = false;
+                }
+            });
+
+            Array.from(labTestsDropdown.options).forEach(function (option) {
+                if (option.value === test) {
+                    option.selected = false;
+                }
+            });
+
+            updateSelectedTests();
+            updateTotalAmount();
         }
-    });
 
-    updateSelectedTests();
-    updateTotalAmount();
-}
+        function updateTotalAmount() {
+            var totalAmount = 0;
 
-function updateTotalAmount() {
-    var totalAmount = 0;
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    totalAmount += testPrices[checkbox.value] || 0;
+                }
+            });
 
-    checkboxes.forEach(function (checkbox) {
-        if (checkbox.checked) {
-            totalAmount += testPrices[checkbox.value] || 0;
+            Array.from(labTestsDropdown.selectedOptions).forEach(function (option) {
+                totalAmount += testPrices[option.value] || 0;
+            });
+
+            totalAmountInput.value = totalAmount;
         }
-    });
 
-    Array.from(labTestsDropdown.selectedOptions).forEach(function (option) {
-        totalAmount += testPrices[option.value] || 0;
-    });
+        // Add functionality to load available time slots based on the selected date
+        document.getElementById('appointment-date').addEventListener('change', function () {
+            loadAvailableTimes(this.value);
+        });
 
-    totalAmountInput.value = totalAmount;
-}
+        function loadAvailableTimes(date) {
+            var availableTimes = getAvailableTimes(date); // This function will get available times based on the date
+            var timeDropdown = document.getElementById('appointment-time');
+            timeDropdown.innerHTML = '<option value="">--Select Time--</option>'; // Reset options
 
-</script>
+            availableTimes.forEach(function (time) {
+                var option = document.createElement('option');
+                option.value = time;
+                option.textContent = time;
+                timeDropdown.appendChild(option);
+            });
+        }
+
+        function getAvailableTimes(date) {
+            // This should fetch available times from the server or any data source
+            // For demonstration, I'm returning some static times
+            return [
+                '09:00 AM - 09:30 AM',
+                '10:00 AM - 10:30 AM',
+                '11:00 AM - 11:30 AM'
+            ];
+        }
+
+        document.getElementById('book-appointment').addEventListener('click', function () {
+            var selectedDate = document.getElementById('appointment-date').value;
+            var selectedTime = document.getElementById('appointment-time').value;
+            if (selectedDate && selectedTime) {
+                bookAppointment(selectedDate, selectedTime);
+            } else {
+                alert('Please select both date and time for the appointment.');
+            }
+        });
+
+        function bookAppointment(date, time) {
+            // This function will handle booking logic, such as updating the server, decrementing the limit, etc.
+            console.log('Booking appointment on ' + date + ' at ' + time);
+            // For now, just show an alert
+            alert('Appointment booked on ' + date + ' at ' + time);
+        }
+    </script>
 </body>
 
 </html>
