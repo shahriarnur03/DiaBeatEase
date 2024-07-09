@@ -774,3 +774,151 @@ span.date {
 	background-color: rgb(121, 201, 180);
   }
   
+
+
+  /* Demogr_Analysis */
+  .container {
+	height: 250px;
+	/* width: 350px; */
+	border-radius: 1em;
+	overflow: hidden;
+	box-shadow: 0 10px 20px #dbdbdb;
+	font-family: sans-serif;
+	width: 90%; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box;
+  }
+  
+  .palette {
+	display: flex;
+	height: 86%;
+	width: 100%;
+  }
+  
+  .color {
+	height: 100%;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transition: flex 0.1s linear;
+  }
+  
+  .color span {
+	opacity: 0;
+	transition: opacity 0.1s linear;
+  }
+  
+  .color:nth-child(1) {
+	background: #264653;
+  }
+  
+  .color:nth-child(2) {
+	background: #2a9d8f;
+  }
+  
+  .color:nth-child(3) {
+	background: #e9c46a;
+  }
+  
+  .color:nth-child(4) {
+	background: #f4a261;
+  }
+  
+  .color:nth-child(5) {
+	background: #e76f51;
+  }
+  
+  .color:hover {
+	flex: 2;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .color:hover span {
+	opacity: 1;
+  }
+  
+  #stats {
+	height: 14%;
+	width: 100%;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1.5em;
+	box-sizing: border-box;
+	color: #bebebe;
+  }
+  
+  #stats svg {
+	fill: #bebebe;
+	transform: scale(1.2);
+  }
+
+
+
+  .container1 {
+	height: 400px;
+	/* width: 350px; */
+	border-radius: 1em;
+	overflow: hidden;
+	box-shadow: 0 10px 20px #dbdbdb;
+	font-family: sans-serif;
+	width: 90%; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box;
+  }
+  .cards {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .cards .red {
+	background-color: #d59136;
+  }
+  
+  .cards .blue {
+	background-color: #5b83c3;
+  }
+  
+  .cards .green {
+	background-color: #5ecc8e;
+  }
+  
+  .cards .card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	height: 100px;
+	width: 1050px;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+	font-size: 1em;
+	font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+	font-size: .7em;
+  }
+  
+  .cards .card:hover {
+	transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+	filter: blur(10px);
+	transform: scale(0.9, 0.9);
+  }
