@@ -60,28 +60,13 @@
                                     </div>
                                     <div class="col-12 text-center mb-4">
                                         <div class="d-flex justify-content-center align-items-center">
-                                            <div class="dropdown">
-                                                <button class="btn dropdown-toggle" id="dropdownMenuButton"
-                                                    style="background-color: aliceblue; color: #6AAA9B;" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    Sign Up As
-                                                </button>
-                                                <ul class="dropdown-menu border-0 shadow p-3"
-                                                    style="background-color: aliceblue; color: #6AAA9B !important;">
-                                                    <li><a class="dropdown-item py-2 rounded" href="#"
-                                                            onclick="updateButtonText('Admin')">Admin</a></li>
-                                                    <li><a class="dropdown-item py-2 rounded" href="#"
-                                                            onclick="updateButtonText('Patient')">Patient</a></li>
-                                                    <li><a class="dropdown-item py-2 rounded" href="#"
-                                                            onclick="updateButtonText('Doctor')">Doctor</a></li>
-                                                    <li><a class="dropdown-item py-2 rounded" href="#"
-                                                            onclick="updateButtonText('Diagnostic Center')">Healthcare
-                                                            Facility</a></li>
-                                                </ul>
-                                            </div>
+                                            <h4 id="user-type-display" class="fw-bold fs-2">
+                                            </h4>
+                                            <input type="hidden" id="user-type" name="user-type">
                                         </div>
                                         <span class="dividers text-muted mt-4"></span>
                                     </div>
+                                    
                                     <div class="col-6">
                                         <div class="mb-2">
                                             <label class="form-label">Full name</label>
@@ -177,15 +162,20 @@
     <!-- Jquery Core Js -->
     <script src="../../../assets/bundles/libscripts.bundle.js"></script>
     <script>
-        function updateButtonText(selectedText) {
-            document.getElementById('dropdownMenuButton').textContent = selectedText;
-            if (selectedText === 'Doctor') {
-                document.getElementById('bmdc-field').style.display = 'block';
-            } else {
-                document.getElementById('bmdc-field').style.display = 'none';
+        document.addEventListener('DOMContentLoaded', function () {
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
             }
-        }
+    
+            const userType = getQueryParam('type');
+            if (userType) {
+                document.getElementById('user-type-display').textContent = userType;
+                document.getElementById('user-type').value = userType;
+            }
+        });
     </script>
+    
 
 </body>
 
