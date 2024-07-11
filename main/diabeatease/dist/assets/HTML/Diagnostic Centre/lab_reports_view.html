@@ -1,0 +1,417 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>:: I-Health:: Lab Reports</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+    <link rel="stylesheet" href="../../../assets/css/ihealth.style.min.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .actions a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .actions a:hover {
+            text-decoration: underline;
+        }
+
+        .status-signed-off {
+            color: green;
+        }
+
+        .status-new {
+            color: blue;
+        }
+
+        .upload-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ihealth-layout" class="theme-tradewind">
+        <!-- sidebar -->
+        <div class="sidebar px-4 py-4 py-md-5 me-0">
+            <div class="d-flex flex-column h-100">
+                <a href="index.html" class="mb-0 brand-icon">
+                    <span class="logo-icon">
+                        <i class="icofont-heart-beat fs-2"></i>
+                    </span>
+                    <span class="logo-text">I-Health</span></a>
+                <!-- Menu: main ul -->
+
+                <ul class="menu-list flex-grow-1 mt-3">
+                    <li class="collapsed">
+                        <a class="m-link" data-bs-toggle="collapse" data-bs-target="#dashboard" href="#">
+                            <i class="icofont-ui-home fs-5"></i> <span>Home</span> <span
+                                class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse" id="dashboard">
+                            <li><a class="ms-link" href="Dashborar.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="m-link" href="virtual.html"><i class="icofont-ui-video-chat fs-5"></i> <span>I-Health
+                                Virtual</span></a></li>
+                    <li class="collapsed">
+                        <a class="m-link active" data-bs-toggle="collapse" data-bs-target="#menu-Doctor" href="#">
+                            <i class="icofont-doctor-alt fs-5"></i> <span>Doctor</span> <span
+                                class="arrow icofont-rounded-down ms-auto text-end fs-5"></span></a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse show" id="menu-Doctor">
+                            <li><a class="ms-link" href="lab_report_upload.html">Upload Lab Reports</a></li>
+                            <li><a class="ms-link" href="D_scheadle.html">Customise Scheadule</a></li>
+                            <li><a class="ms-link" href="D_appoinment.html">Appoinment</a></li>
+                            <li><a class="ms-link" href="lab_reports_view.html">View Lab Report</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Menu: menu collepce btn -->
+                <button type="button" class="btn btn-link sidebar-mini-btn text-light">
+                    <span class="ms-2"><i class="icofont-bubble-right"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- main body area -->
+        <div class="main px-lg-4 px-md-4">
+            <!-- Body: Header -->
+            <div class="header">
+                <nav class="navbar py-4">
+                    <div class="container-xxl">
+                        <!-- header rightbar icon -->
+                        <div class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1">
+                            <div class="d-flex">
+                                <a class="nav-link text-primary collapsed" href="help.html" title="Get Help">
+                                    <i class="icofont-info-square fs-5"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown notifications zindex-popover">
+                                <a class="nav-link dropdown-toggle pulse" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="icofont-alarm fs-5"></i>
+                                    <span class="pulse-ring"></span>
+                                </a>
+                                <div id="NotificationsDiv" class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-sm-end p-0 m-0">
+                                    <div class="card border-0 w380">
+                                        <div class="card-header border-0 p-3">
+                                            <h5 class="mb-0 font-weight-light d-flex justify-content-between">
+                                                <span>Notifications</span>
+                                                <span class="badge text-white">06</span>
+                                            </h5>
+                                        </div>
+                                        <div class="tab-content card-body">
+                                            <div class="tab-pane fade show active">
+                                                <ul class="list-unstyled list mb-0">
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar1.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">Chloe Walkerr</span><small>2MIN</small></p>
+                                                                <span class="">Added Appointment 2021-06-19 <span class="badge bg-success">Book</span></span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <div class="avatar rounded-circle no-thumbnail">AH</div>
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">Alan Hill</span><small>13MIN</small></p>
+                                                                <span class="">Lab sample collection</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar3.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">Melanie Oliver</span><small>1HR</small></p>
+                                                                <span class="">Invoice Create Patient Room A-803</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar5.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">Boris Hart</span><small>13MIN</small></p>
+                                                                <span class="">Medicine Order to Medical</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2 mb-1 border-bottom">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar6.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">Alan Lambert</span><small>1HR</small></p>
+                                                                <span class="">Leave Apply</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="py-2">
+                                                        <a href="javascript:void(0);" class="d-flex">
+                                                            <img class="avatar rounded-circle" src="../../../assets/images/xs/avatar7.jpg" alt="">
+                                                            <div class="flex-fill ms-2">
+                                                                <p class="d-flex justify-content-between mb-0 "><span class="font-weight-bold">Zoe Wright</span><small class="">1DAY</small></p>
+                                                                <span class="">Patient Food Order Room A-809</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="card-footer text-center border-top-0" href="#"> View all notifications</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center zindex-popover">
+                                <div class="u-info me-2">
+                                    <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">John Quinn</span></p>
+                                    <small>Admin Profile</small>
+                                </div>
+                                <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static">
+                                    <img class="avatar lg rounded-circle img-thumbnail" src="../../../assets/images/profile_av.png" alt="profile">
+                                </a>
+                                <div class="dropdown-menu rounded-lg shadow border-0 dropdown-animation dropdown-menu-end p-0 m-0">
+                                    <div class="card border-0 w280">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex py-1">
+                                                <img class="avatar rounded-circle" src="../../../assets/images/profile_av.png" alt="profile">
+                                                <div class="flex-fill ms-3">
+                                                    <p class="mb-0"><span class="font-weight-bold">John Quinn</span></p>
+                                                    <small class="">Johnquinn@gmail.com</small>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <hr class="dropdown-divider border-dark">
+                                            </div>
+                                        </div>
+                                        <div class="list-group m-2 ">
+                                            <a href="virtual.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-ui-video-chat fs-5 me-3"></i>I-Health Virtual</a>
+                                            <a href="patient-invoices.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-dollar fs-5 me-3"></i>Patient Invoices</a>
+                                            <a href="ui-elements/auth-signin.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-logout fs-6 me-3"></i>Signout</a>
+                                            <div>
+                                                <hr class="dropdown-divider border-dark">
+                                            </div>
+                                            <a href="ui-elements/auth-signup.html" class="list-group-item list-group-item-action border-0 "><i class="icofont-contact-add fs-5 me-3"></i>Add personal account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting ms-2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- menu toggler -->
+                        <button class="navbar-toggler p-0 border-0 menu-toggle order-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainHeader">
+                            <span class="fa fa-bars"></span>
+                        </button>
+
+                        <!-- main menu Search-->
+                        <div class="order-0 col-lg-4 col-md-4 col-sm-12 col-12 mb-3 mb-md-0 ">
+                            <div class="input-group flex-nowrap input-group-lg">
+                                <input type="search" class="form-control" placeholder="Search" aria-label="search" aria-describedby="addon-wrapping">
+                                <button type="button" class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container mt-4">
+                <div class="upload-section">
+                    <h5 class="section-title">Lab Reports</h5>
+                </div>
+
+                <table id="signed-off-reports">
+                    <thead>
+                        <tr>
+                            <th>Reg. no.</th>
+                            <th>Time</th>
+                            <th>Patient</th>
+                            <th>Referred by</th>
+                            <th>Tests</th>
+                            <th>CC</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                            <th>Download </th>
+                        </tr>
+
+                        <tr>
+                            <td>#20</td>
+                            <td>12:53 PM</td>
+                            <td>Mr. Vivek Sharma</td>
+                            <td>Dr. Akash Ahuja</td>
+                            <td>Complete Blood Count (C.B.C.), Liver Function Test (LFT)</td>
+                            <td>Main</td>
+                            <td class="status-signed-off">Done</td>
+                            <td class="actions">
+                                <a href="#">View</a>
+                            </td>
+                            <td class="actions">                                
+                                <a href="#">PDF</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#20</td>
+                            <td>12:53 PM</td>
+                            <td>Mr. Vivek Sharma</td>
+                            <td>Dr. Akash Ahuja</td>
+                            <td>Complete Blood Count (C.B.C.), Liver Function Test (LFT)</td>
+                            <td>Main</td>
+                            <td class="status-signed-off">Done</td>
+                            <td class="actions">
+                                <a href="#">View</a>
+                            </td>
+                            <td class="actions">                                
+                                <a href="#">PDF</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#20</td>
+                            <td>12:53 PM</td>
+                            <td>Mr. Vivek Sharma</td>
+                            <td>Dr. Akash Ahuja</td>
+                            <td>Complete Blood Count (C.B.C.), Liver Function Test (LFT)</td>
+                            <td>Main</td>
+                            <td class="status-signed-off">Pending</td>
+                            <td class="actions">
+                                <a href="#">View</a>
+                            </td>
+                            <td class="actions">                                
+                                <a href="#">PDF</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#20</td>
+                            <td>12:53 PM</td>
+                            <td>Mr. Vivek Sharma</td>
+                            <td>Dr. Akash Ahuja</td>
+                            <td>Complete Blood Count (C.B.C.), Liver Function Test (LFT)</td>
+                            <td>Main</td>
+                            <td class="status-signed-off">pending</td>
+                            <td class="actions">
+                                <a href="#">View</a>
+                            </td>
+                            <td class="actions">                                
+                                <a href="#">PDF</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#20</td>
+                            <td>12:53 PM</td>
+                            <td>Mr. Vivek Sharma</td>
+                            <td>Dr. Akash Ahuja</td>
+                            <td>Complete Blood Count (C.B.C.), Liver Function Test (LFT)</td>
+                            <td>Main</td>
+                            <td class="status-signed-off">Pending</td>
+                            <td class="actions">
+                                <a href="#">View</a>
+                            </td>
+                            <td class="actions">                                
+                                <a href="#">PDF</a>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#20</td>
+                            <td>12:53 PM</td>
+                            <td>Mr. Vivek Sharma</td>
+                            <td>Dr. Akash Ahuja</td>
+                            <td>Complete Blood Count (C.B.C.), Liver Function Test (LFT)</td>
+                            <td>Main</td>
+                            <td class="status-signed-off">Pending</td>
+                            <td class="actions">
+                                <a href="#">View</a>
+                            </td>
+                            <td class="actions">                                
+                                <a href="#">PDF</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../../../assets/bundles/libscripts.bundle.js"></script>
+    <!-- Plugin Js -->
+    <script src="../../../assets/bundles/apexcharts.bundle.js"></script>
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const patientId = document.getElementById('patient-id').value;
+            const files = document.getElementById('report').files;
+
+            if (!patientId || files.length === 0) {
+                alert('Please provide a patient ID and select at least one PDF file.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('patientId', patientId);
+            for (let i = 0; i < files.length; i++) {
+                formData.append('reports', files[i]);
+            }
+
+            // Replace with actual API endpoint
+            fetch('/upload-endpoint', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert('Files uploaded successfully!');
+                })
+                .catch(error => {
+                    console.error('Error uploading files:', error);
+                    alert('Error uploading files.');
+                });
+        });
+    </script>
+</body>
+
+</html>
