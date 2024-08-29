@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-    <!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/patient-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2024 19:16:47 GMT -->
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -8,14 +7,37 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>:: I-Health:: Patient Add</title>
+        <title>:: I-Health:: Patient Profile</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- Favicon-->
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Medication Card</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reports/Documents</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            rel="stylesheet"
+        />
+        <!-- Plugin css file  -->
+        <link
+            rel="stylesheet"
+            href="../../../assets/plugin/owlcarousel/owl.carousel.min.css"
+        />
         <!-- project css file  -->
         <link
             rel="stylesheet"
             href="../../../assets/css/ihealth.style.min.css"
+        />
+        <link rel="stylesheet" href="../../../assets/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="../../../assets/css/custom_css_doc_profile.css"
         />
         <!-- Google Code  -->
         <script
@@ -24,6 +46,7 @@
         ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
+
             function gtag() {
                 dataLayer.push(arguments);
             }
@@ -32,6 +55,7 @@
             gtag("config", "UA-264428387-1");
         </script>
     </head>
+
     <body>
         <div id="ihealth-layout" class="theme-tradewind">
             <!-- sidebar -->
@@ -162,7 +186,6 @@
                 </div>
             </div>
 
-            <!-- main body area -->
             <div class="main px-lg-4 px-md-4">
                 <!-- Body: Header -->
                 <div class="header">
@@ -172,14 +195,61 @@
                             <div
                                 class="h-right d-flex align-items-center mr-5 mr-lg-0 order-1"
                             >
-                                <div class="d-flex">
-                                    <a
-                                        class="nav-link text-primary collapsed"
-                                        href="help.html"
-                                        title="Get Help"
+                                <div class="setting-mode py-3">
+                                    <div
+                                        class="form-check form-switch theme-switch mb-0"
                                     >
-                                        <i class="icofont-info-square fs-5"></i>
-                                    </a>
+                                        <label class="theme-switch">
+                                            <input
+                                                type="checkbox"
+                                                class="theme-switch__checkbox"
+                                            />
+                                            <div
+                                                class="theme-switch__container"
+                                            >
+                                                <div
+                                                    class="theme-switch__clouds"
+                                                ></div>
+                                                <div
+                                                    class="theme-switch__stars-container"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 144 55"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            clip-rule="evenodd"
+                                                            d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                                                            fill="currentColor"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="theme-switch__circle-container"
+                                                >
+                                                    <div
+                                                        class="theme-switch__sun-moon-container"
+                                                    >
+                                                        <div
+                                                            class="theme-switch__moon"
+                                                        >
+                                                            <div
+                                                                class="theme-switch__spot"
+                                                            ></div>
+                                                            <div
+                                                                class="theme-switch__spot"
+                                                            ></div>
+                                                            <div
+                                                                class="theme-switch__spot"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
                                 <div
                                     class="dropdown notifications zindex-popover"
@@ -227,7 +297,7 @@
                                                             >
                                                                 <img
                                                                     class="avatar rounded-circle"
-                                                                    src="../../../assets/images/xs/avatar1.jpg"
+                                                                    src="assets/images/xs/avatar1.jpg"
                                                                     alt=""
                                                                 />
                                                                 <div
@@ -303,7 +373,7 @@
                                                             >
                                                                 <img
                                                                     class="avatar rounded-circle"
-                                                                    src="../../../assets/images/xs/avatar3.jpg"
+                                                                    src="assets/images/xs/avatar3.jpg"
                                                                     alt=""
                                                                 />
                                                                 <div
@@ -341,7 +411,7 @@
                                                             >
                                                                 <img
                                                                     class="avatar rounded-circle"
-                                                                    src="../../../assets/images/xs/avatar5.jpg"
+                                                                    src="assets/images/xs/avatar5.jpg"
                                                                     alt=""
                                                                 />
                                                                 <div
@@ -377,7 +447,7 @@
                                                             >
                                                                 <img
                                                                     class="avatar rounded-circle"
-                                                                    src="../../../assets/images/xs/avatar6.jpg"
+                                                                    src="assets/images/xs/avatar6.jpg"
                                                                     alt=""
                                                                 />
                                                                 <div
@@ -410,7 +480,7 @@
                                                             >
                                                                 <img
                                                                     class="avatar rounded-circle"
-                                                                    src="../../../assets/images/xs/avatar7.jpg"
+                                                                    src="assets/images/xs/avatar7.jpg"
                                                                     alt=""
                                                                 />
                                                                 <div
@@ -472,7 +542,7 @@
                                     >
                                         <img
                                             class="avatar lg rounded-circle img-thumbnail"
-                                            src="../../../assets/images/profile_av.png"
+                                            src="assets/images/profile_av.png"
                                             alt="profile"
                                         />
                                     </a>
@@ -484,7 +554,7 @@
                                                 <div class="d-flex py-1">
                                                     <img
                                                         class="avatar rounded-circle"
-                                                        src="../../../assets/images/profile_av.png"
+                                                        src="assets/images/profile_av.png"
                                                         alt="profile"
                                                     />
                                                     <div class="flex-fill ms-3">
@@ -509,20 +579,12 @@
                                             </div>
                                             <div class="list-group m-2">
                                                 <a
-                                                    href="virtual.html"
+                                                    href="doctor-profile.html"
                                                     class="list-group-item list-group-item-action border-0"
                                                     ><i
                                                         class="icofont-ui-video-chat fs-5 me-3"
                                                     ></i
-                                                    >I-Health Virtual</a
-                                                >
-                                                <a
-                                                    href="patient-invoices.html"
-                                                    class="list-group-item list-group-item-action border-0"
-                                                    ><i
-                                                        class="icofont-dollar fs-5 me-3"
-                                                    ></i
-                                                    >Patient Invoices</a
+                                                    >View Profile</a
                                                 >
                                                 <a
                                                     href="ui-elements/auth-signin.html"
@@ -537,26 +599,13 @@
                                                         class="dropdown-divider border-dark"
                                                     />
                                                 </div>
-                                                <a
-                                                    href="ui-elements/auth-signup.html"
-                                                    class="list-group-item list-group-item-action border-0"
-                                                    ><i
-                                                        class="icofont-contact-add fs-5 me-3"
-                                                    ></i
-                                                    >Add personal account</a
-                                                >
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="setting ms-2">
-                                    <a
-                                        href="#"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#Settingmodal"
-                                        ><i class="icofont-gear-alt fs-5"></i
-                                    ></a>
-                                </div>
+                                <!-- <div class="setting ms-2">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Settingmodal"><i class="icofont-gear-alt fs-5"></i></a>
+                        </div> -->
                             </div>
 
                             <!-- menu toggler -->
@@ -597,347 +646,185 @@
                 </div>
 
                 <!-- Body: Body -->
-                <div class="body d-flex py-3">
-                    <div class="container-xxl">
-                        <div class="row align-items-center">
-                            <div class="border-0 mb-4">
-                                <div
-                                    class="card-header py-3 no-bg bg-transparent d-flex align-items-center px-0 justify-content-between border-bottom flex-wrap"
-                                >
-                                    <h3 class="fw-bold mb-0">Add Patients</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Row end  -->
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <div class="card mb-3">
-                                    <div
-                                        class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0"
-                                    >
-                                        <h6 class="mb-0 fw-bold">
-                                            Patients Basic Inforamtion
-                                        </h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div
-                                                class="row g-3 align-items-center"
-                                            >
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="firstname"
-                                                        class="form-label"
-                                                        >First Name</label
+
+                <div class="wrapper">
+                    <div class="prescription_form" style="margin: 0">
+                        <table
+                            class="prescription"
+                            data-prescription_id="{{ prescription_id }}"
+                            border="1"
+                        >
+                            <tbody>
+                                <tr height="15%">
+                                    <td colspan="2">
+                                        <div class="header">
+                                            <div class="logo">
+                                                <img
+                                                    src="https://seeklogo.com/images/H/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png"
+                                                />
+                                            </div>
+                                            <div class="credentials">
+                                                <h4>Doctor Name</h4>
+                                                <p>Chamber Name</p>
+                                                <small>Adress</small
+                                                ><br /><small
+                                                    >Mb. 0XXXXXXXXX</small
+                                                >
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="40%">
+                                        <div class="desease_details">
+                                            <div class="symptoms">
+                                                <h4 class="d-header">
+                                                    Symptoms
+                                                </h4>
+                                                <ul
+                                                    class="symp"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title="Click to edit."
+                                                    contenteditable="true"
+                                                ></ul>
+                                                <div class="symp_action">
+                                                    <button
+                                                        class="btn btn-sm btn-success save"
+                                                        id="symp_save"
+                                                        data-prescription_id="{{ prescription_id }}"
                                                     >
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="firstname"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="lastname"
-                                                        class="form-label"
-                                                        >Last Name</label
+                                                        Save
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-sm btn-danger cancel-btn"
                                                     >
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="lastname"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="phonenumber"
-                                                        class="form-label"
-                                                        >Phone Number</label
-                                                    >
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="phonenumber"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="emailaddress"
-                                                        class="form-label"
-                                                        >Email Address</label
-                                                    >
-                                                    <input
-                                                        type="email"
-                                                        class="form-control"
-                                                        id="emailaddress"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="admitdate"
-                                                        class="form-label"
-                                                        >Admit Date</label
-                                                    >
-                                                    <input
-                                                        type="date"
-                                                        class="form-control"
-                                                        id="admitdate"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="admittime"
-                                                        class="form-label"
-                                                        >Admit Time</label
-                                                    >
-                                                    <input
-                                                        type="time"
-                                                        class="form-control"
-                                                        id="admittime"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="formFileMultiple"
-                                                        class="form-label"
-                                                        >Files Document
-                                                        Upload</label
-                                                    >
-                                                    <input
-                                                        class="form-control"
-                                                        type="file"
-                                                        id="formFileMultiple"
-                                                        multiple
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label"
-                                                        >Gender</label
-                                                    >
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div
-                                                                class="form-check"
-                                                            >
-                                                                <input
-                                                                    class="form-check-input"
-                                                                    type="radio"
-                                                                    name="exampleRadios"
-                                                                    id="exampleRadios11"
-                                                                    value="option1"
-                                                                    checked
-                                                                />
-                                                                <label
-                                                                    class="form-check-label"
-                                                                    for="exampleRadios11"
-                                                                >
-                                                                    Male
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div
-                                                                class="form-check"
-                                                            >
-                                                                <input
-                                                                    class="form-check-input"
-                                                                    type="radio"
-                                                                    name="exampleRadios"
-                                                                    id="exampleRadios22"
-                                                                    value="option2"
-                                                                />
-                                                                <label
-                                                                    class="form-check-label"
-                                                                    for="exampleRadios22"
-                                                                >
-                                                                    Female
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <label
-                                                        for="addnote"
-                                                        class="form-label"
-                                                        >Add Note</label
-                                                    >
-                                                    <textarea
-                                                        class="form-control"
-                                                        id="addnote"
-                                                        rows="3"
-                                                    ></textarea>
+                                                        Cancel
+                                                    </button>
                                                 </div>
                                             </div>
-
-                                            <button
-                                                type="submit"
-                                                class="btn btn-primary mt-4"
-                                            >
-                                                Submit
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div
-                                        class="card-header py-3 d-flex justify-content-between bg-transparent border-bottom-0"
-                                    >
-                                        <h6 class="mb-0 fw-bold">
-                                            Registration Information
-                                        </h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div
-                                                class="row g-3 align-items-center"
-                                            >
-                                                <div class="col-md-6">
-                                                    <label class="form-label"
-                                                        >Select Payment
-                                                        Option</label
+                                            <div class="tests">
+                                                <h4 class="d-header">Tests</h4>
+                                                <ul
+                                                    class="tst"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title="Click to edit."
+                                                    contenteditable="true"
+                                                ></ul>
+                                                <div class="test_action">
+                                                    <button
+                                                        class="btn btn-sm btn-success save"
+                                                        id="test_save"
+                                                        data-prescription_id="{{ prescription_id }}"
                                                     >
-                                                    <select
-                                                        class="form-select"
-                                                        aria-label="Default select example"
+                                                        Save
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-sm btn-danger cancel-btn"
                                                     >
-                                                        <option selected>
-                                                            Payment Option
-                                                        </option>
-                                                        <option value="1">
-                                                            Credit Card
-                                                        </option>
-                                                        <option value="2">
-                                                            Debit Card
-                                                        </option>
-                                                        <option value="3">
-                                                            Case Money
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label"
-                                                        >Insurance
-                                                        Information</label
-                                                    >
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div
-                                                                class="form-check"
-                                                            >
-                                                                <input
-                                                                    class="form-check-input"
-                                                                    type="radio"
-                                                                    name="exampleRadios"
-                                                                    id="exampleRadios1"
-                                                                    value="option1"
-                                                                    checked
-                                                                />
-                                                                <label
-                                                                    class="form-check-label"
-                                                                    for="exampleRadios1"
-                                                                >
-                                                                    Yes I have
-                                                                    Insurance
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div
-                                                                class="form-check"
-                                                            >
-                                                                <input
-                                                                    class="form-check-input"
-                                                                    type="radio"
-                                                                    name="exampleRadios"
-                                                                    id="exampleRadios2"
-                                                                    value="option2"
-                                                                />
-                                                                <label
-                                                                    class="form-check-label"
-                                                                    for="exampleRadios2"
-                                                                >
-                                                                    No I haven't
-                                                                    Insurance
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="insinfo"
-                                                        class="form-label"
-                                                        >Insurance Number</label
-                                                    >
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="insinfo"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="roominfo"
-                                                        class="form-label"
-                                                        >Ward Number</label
-                                                    >
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="roominfo"
-                                                    />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label"
-                                                        >Select Doctor</label
-                                                    >
-                                                    <select
-                                                        class="form-select"
-                                                        aria-label="Default select example"
-                                                    >
-                                                        <option selected>
-                                                            Select Doctor
-                                                        </option>
-                                                        <option value="1">
-                                                            Vanessa Miller
-                                                        </option>
-                                                        <option value="2">
-                                                            Rebecca Hunter
-                                                        </option>
-                                                        <option value="3">
-                                                            Matt Clark
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label
-                                                        for="advancepayment"
-                                                        class="form-label"
-                                                        >Advance Amount</label
-                                                    >
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        id="advancepayment"
-                                                    />
+                                                        Cancel
+                                                    </button>
                                                 </div>
                                             </div>
-
-                                            <button
-                                                type="submit"
-                                                class="btn btn-primary mt-4"
+                                            <div class="advice">
+                                                <h4 class="d-header">Advice</h4>
+                                                <p
+                                                    class="adv_text"
+                                                    style="outline: 0"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title="Click to edit."
+                                                    contenteditable="true"
+                                                ></p>
+                                                <div class="adv_action">
+                                                    <button
+                                                        class="btn btn-sm btn-success save"
+                                                        id="adv_save"
+                                                        data-prescription_id="{{ prescription_id }}"
+                                                    >
+                                                        Save
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-sm btn-danger cancel-btn"
+                                                    >
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="60%" valign="top">
+                                        <span style="font-size: 2em"
+                                            >R<sub>x</sub></span
+                                        >
+                                        <hr />
+                                        <div class="medicine">
+                                            <section class="med_list"></section>
+                                            <div
+                                                id="add_md"
+                                                data-toggle="tooltip"
+                                                data-placement="right"
+                                                title="Click anywhere on the blank space to add more."
                                             >
-                                                Submit
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                                Click to add...
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="snacking">Saving...</div>
+                        <div id="snacked">Saved!</div>
                     </div>
                 </div>
 
+                <script id="new_medicine" type="text/template">
+                    <div class="med">&#x26AB;
+                      <input class="med_name" data-med_id="{{ med_id }}" data-toggle="tooltip" title="Click to edit..." placeholder="Enter medicine name"/>
+                      <div class="med_name_action">
+                        <button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">Save</button>
+                        <button class="btn btn-sm btn-danger cancel-btn">Cancel</button>
+                      </div>
+                      <div class="schedual">
+                        <div class="sc_time folded">
+                          <select class="sc" data-med_id="{{ med_id }}">
+                            <option value="1+1+1" selected="">1+1+1</option>
+                            <option value="1+0+1">1+0+1</option>
+                            <option value="0+1+1">1+1+1</option>
+                            <option value="1+0+0">1+1+1</option>
+                            <option value="0+0+1">1+1+1</option>
+                            <option value="1+1+1+1">1+1+1+1</option>
+                          </select>
+                          <div class="med_when_action">
+                            <button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">&amp;check;</button>
+                          </div>
+                        </div>
+                        <div class="taking_time select folded">
+                          <select class="meal" data-med_id="{{ med_id }}">
+                            <option value="1" selected="">After Meal</option>
+                            <option value="2">Before Meal</option>
+                            <option value="3">Take any time</option>
+                          </select>
+                          <div class="med_meal_action">
+                            <button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">&amp;check;</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="med_footer">
+                        <div class="period folded">Take for
+                          <input class="med_period" type="text" data-med_id="{{ med_id }}" placeholder="? days/weeks..."/>
+                          <div class="med_period_action">
+                            <button class="btn btn-sm btn-success save" data-med_id="{{ med_id }}">&amp;check;</button>
+                          </div><span class="date"></span>
+                        </div>
+                        <div class="del_action">
+                          <button class="btn btn-sm btn-danger delete" data-med_id="{{ med_id }}"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                      <hr/>
+                    </div>
+                </script>
                 <!-- Modal Custom Settings-->
                 <div
                     class="modal fade right"
@@ -1202,6 +1089,7 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <!-- Settings: Light/dark -->
                                 <div class="setting-mode py-3">
                                     <h6
@@ -1296,9 +1184,59 @@
         <!-- Jquery Core Js -->
         <script src="../../../assets/bundles/libscripts.bundle.js"></script>
 
+        <!-- Plugin Js -->
+        <script src="../../../assets/bundles/apexcharts.bundle.js"></script>
+        <script src="../../../assets/plugin/owlcarousel/owl.carousel.js"></script>
+
         <!-- Jquery Page Js -->
         <script src="../../../../js/template.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#patient-table")
+                    .addClass("nowrap")
+                    .dataTable({
+                        responsive: true,
+                        columnDefs: [
+                            { targets: [-1, -3], className: "dt-body-right" },
+                        ],
+                    });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../../../../js/page/prescription.js"></script>
+        <script>
+            $(document).ready(function () {
+                console.log("abs");
+                $("#add_md").on("click", function () {
+                    let newMedicineTemplate = $("#new_medicine").html();
+                    $(".med_list").append(
+                        newMedicineTemplate.replace(/{{med_id}}/g, Date.now())
+                    );
+                    $(this).text(""); // Clear the "Click to add..." text
+                });
+                $(document).on("focusin keypress", ".med_name", function (e) {
+                    let x = $(this).siblings("div.med_name_action");
+                    if (e.type == "focusin") {
+                        x.css("display", "block");
+                    }
+                    if (e.type == "keypress" && e.keyCode == 13) {
+                        x.children("button.save").click();
+                    }
+                });
+                $(document).on("click", ".cancel-btn", function () {
+                    $(this).parent().css("display", "none");
+                });
+                $(document).on(
+                    "click",
+                    ".med_name_action button.save",
+                    function () {
+                        $(this).parent().css("display", "none");
+                        $(".sc_time").removeClass("folded");
+                    }
+                );
+            });
+        </script>
     </body>
-
-    <!-- Mirrored from pixelwibes.com/template/ihealth/html/dist/patient-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2024 19:16:47 GMT -->
 </html>

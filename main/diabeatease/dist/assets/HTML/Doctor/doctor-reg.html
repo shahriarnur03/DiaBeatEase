@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>:: DiaBeatEase:: Signup</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+    <!-- project css file  -->
+    <link rel="stylesheet" href="../../../assets/css/ihealth.style.min.css">
+    <!-- Google Code  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-264428387-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-264428387-1');
+
+    </script>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .rounded-border {
+        border: 2px solid #e2f1e6;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-square {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-square i {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .btn-square h6 {
+        margin-top: 10px;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-square:hover {
+        transform: scale(1.1);
+        background-color: #afe5c6;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+    }
+
+    .btn-square:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .image-container img.form-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .col-lg-6 {
+        padding: 0;
+    }
+
+    .auth-h100 {
+        height: 100vh;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div id="ihealth-layout" class="theme-tradewind">
+
+        <!-- main body area -->
+        <div class="main p-2 py-3 p-xl-5">
+
+            <!-- Body: Body -->
+            <div class="body d-flex p-0 p-xl-5">
+                <div class="container-xxl">
+
+                    <div class="row g-0">
+                        <div
+                            class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center rounded-lg auth-h100">
+                            <div style="max-width: 25rem;">
+                                <!-- Image block -->
+                                <div class="">
+                                    <img src="../../../assets/images/doctor-reg.webp" alt="login-img"> <!-- Change this src to your new image path -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-6 d-flex justify-content-center align-items-center border-0 rounded-lg auth-h100">
+                            <div class="w-100 p-3 p-md-5 card border-0 bg-dark text-light" style="max-width: 50rem;">
+                                <!-- Form -->
+                                <form class="row g-1 p-3 p-md-4" id="signup-form">
+                                    <div class="col-12 text-center mb-5">
+                                        <h1>Doctor Registration</h1> <!-- Added Title -->
+                                        <span>Free access to our dashboard.</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-2">
+                                            <label class="form-label">First Name</label>
+                                            <input type="text" class="form-control form-control-lg" placeholder="First name">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-2">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label class="form-label">Date of birth</label>
+                                            <input type="date" class="form-control form-control-lg">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-2">
+                                            <label class="form-label">Gender</label>
+                                            <select class="form-control form-control-lg">
+                                                <option value="">-- Select --</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-2">
+                                            <label class="form-label">District</label>
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="District">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label class="form-label">National ID / Passport Number</label>
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="ID / Passport Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-2">
+                                            <label class="form-label">Registration Number (BMDC)</label>
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="Registration Number (BMDC)">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-2">
+                                            <label class="form-label">Doctor Type</label>
+                                            <select class="form-control form-control-lg">
+                                                <option value="">-- Select --</option>
+                                                <option value="general">General</option>
+                                                <option value="specialist">Specialist</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label class="form-label">Mobile number</label>
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder="Mobile number">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control form-control-lg"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label class="form-label">Password</label>
+                                            <input type="password" class="form-control form-control-lg"
+                                                placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <a href="signup2-patient.html"
+                                            class="btn btn-lg btn-block btn-light lift text-uppercase"
+                                            alt="SIGNUP">NEXT</a>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <span>Already have an account? <a href="signin.html" title="Sign in">Sign in
+                                                here</a></span>
+                                    </div>
+                                </form>
+                                <!-- End Form -->
+
+                            </div>
+                        </div>
+                    </div> <!-- End Row -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Jquery Core Js -->
+    <script src="../../../assets/bundles/libscripts.bundle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const userType = getQueryParam('type');
+            if (userType) {
+                document.getElementById('user-type-display').textContent = userType;
+                document.getElementById('user-type').value = userType;
+            }
+
+            if (userType === 'Doctor') {
+                document.getElementById('bmdc-field').style.display = 'block';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

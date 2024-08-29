@@ -7,6 +7,7 @@
 * Copyright 2021 Pixelwibes
 */
 
+
 if (typeof jQuery === "undefined") {
     throw new Error("jQuery plugins need to be before this file");
 }
@@ -38,7 +39,6 @@ $(function() {
         }else{
             $("body").removeClass('rtl_mode');
         }
-       
     });
 
      // google font setting
